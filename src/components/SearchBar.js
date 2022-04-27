@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 const SearchBar = (props) => {
-    const [state, setState] = useState({term:''})
+    const [state, setState] = useState('')
 
 
   const onInputChange = event => {
