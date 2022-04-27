@@ -1,17 +1,17 @@
 import React, {useState} from 'react';
 
 const SearchBar = ({onFormSubmit}) => {
-    const [state, setState] = useState('')
+    const [term, setState] = useState('')
 
 
   const onInputChange = event => {
-    setState({ term: event.target.value });
+    setState(event.target.value );
   };
 
   const onSubmit = event => {
     event.preventDefault();
 
-    onFormSubmit(state.term);
+    onFormSubmit(term);
   };
 
 
@@ -22,7 +22,7 @@ const SearchBar = ({onFormSubmit}) => {
             <label>Video Search</label>
             <input
               type="text"
-              value={state.term}
+              value={term}
               onChange={onInputChange}
             />
           </div>
