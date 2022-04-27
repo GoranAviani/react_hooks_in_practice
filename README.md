@@ -1,3 +1,5 @@
+Excercise from Modern React With Reduct Course by Stephen Grider. Excercise Section 14: Hooks in practice
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
