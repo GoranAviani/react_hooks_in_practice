@@ -23,7 +23,7 @@ const App = () => {
   };
 
   const onVideoSelect = (video) => {
-    setState({ selectedVideo: video });
+    setState(prevState => ({...prevState, selectedVideo: video }));
   };
 
 
