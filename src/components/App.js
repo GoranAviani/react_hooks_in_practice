@@ -22,10 +22,10 @@ const App = () => {
     });
   };
 
-  const onVideoSelect = (video) => {
+ /* const onVideoSelect = (video) => {
     setState(prevState => ({...prevState, selectedVideo: video }));
   };
-
+*/
 
     return (
       <div className="ui container">
@@ -37,7 +37,7 @@ const App = () => {
             </div>
             <div className="five wide column">
               <VideoList
-                onVideoSelect={onVideoSelect}
+                onVideoSelect={ (video) => setState({selectedVideo: video})}
                 videos={state.videos}
               />
             </div>
