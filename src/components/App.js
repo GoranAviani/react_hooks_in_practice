@@ -37,7 +37,7 @@ const App = () => {
             </div>
             <div className="five wide column">
               <VideoList
-                onVideoSelect={ (video) => setState({selectedVideo: video})}
+                onVideoSelect={ (video) => setState(prevState => ({...prevState, selectedVideo: video}))}
                 videos={state.videos}
               />
             </div>
