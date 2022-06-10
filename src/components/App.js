@@ -7,7 +7,7 @@ import VideoDetail from "./VideoDetail";
 const App = () => {
   const [state, setState] = useState({ videos: [], selectedVideo: null });
 
-  useEffect(()=>onTermSubmit("buildings"),[])
+  useEffect(()=>onTermSubmit("submarine"),[])
 
   const onTermSubmit = async (term) => {
     const response = await youtube.get("/search", {
